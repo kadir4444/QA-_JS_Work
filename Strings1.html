@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+	var text1 = "He said My name is Elliott";
+	
+	var upperText;
+	
+	function Uppercaser(){
+		try{
+			upperText = text1.toUpperCase();
+			document.getElementById("text1").innerHTML = upperText;
+		} catch (Error){
+			document.alert(Error);
+		}
+	}
+</script>
+<title>JavaScriptExercise2.7</title>
+</head>
+
+<body>
+<h1>Java Script Exercise</h1>
+
+<h3>Basic:</h3>
+
+<div style="text-align: center">
+	<p id ="text1">
+	<script>document.getElementById("text1").innerHTML = text1;</script>
+	</p>	
+	<button onclick="Uppercaser()">Uppercase</button>
+</div>
+	
+</body>
+</html>

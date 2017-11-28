@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScriptExercise2.5</title>
+</head>
+
+<body>
+<h1>Java Script Exercise</h1>
+
+<h3>Basic:</h3>
+
+<div style="text-align: center">
+	
+	<p id ="Name" style="background-color:red"></p>
+	<p id ="Age" style="background-color:blue"></p>
+	<p id ="Occupation" style="background-color:yellow"></p>
+	
+	<button onclick="AddAge(person)">Increase Age</button>
+	<button onclick="SubtractAge(person)">Decrease Age</button>
+<script>
+	var person = {
+		name : "MAK",
+		age : 25,
+		occupation : "Tester"
+	};
+	
+	document.getElementById("Name").innerHTML = person["name"];
+	document.getElementById("Age").innerHTML = person["age"];
+	document.getElementById("Occupation").innerHTML = person["occupation"];
+	
+	function AddAge(pers){
+	
+		try{
+			pers.age += 1;
+		} catch (Error){
+			document.alert(Error);
+		}
+		document.getElementById("Age").innerHTML = person["age"];
+	}
+	
+	function SubtractAge(pers){
+	
+		try{
+			pers.age -= 1;
+		} catch (Error){
+			document.alert(Error);
+		}
+		document.getElementById("Age").innerHTML = person["age"];
+	}
+	
+</script>
+	
+</div>
+	
+</body>
+</html>

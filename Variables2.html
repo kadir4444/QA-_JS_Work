@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScriptExercise2.4</title>
+</head>
+
+<body>
+<h1>Java Script Exercise</h1>
+
+<h3>Basic:</h3>
+
+<div style="text-align: center">
+	
+	<p id ="Name" style="background-color:red"></p>
+	<p id ="Age" style="background-color:blue"></p>
+	<p id ="Occupation" style="background-color:yellow"></p>
+	
+<script>
+	var person = {
+		name : "MAK",
+		age : 25,
+		occupation : "Tester"
+	};
+	
+	document.getElementById("Name").innerHTML = person["name"];
+	document.getElementById("Age").innerHTML = person["age"];
+	document.getElementById("Occupation").innerHTML = person["occupation"];
+</script>
+	
+</div>
+	
+</body>
+</html>
